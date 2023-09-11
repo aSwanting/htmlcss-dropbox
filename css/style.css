@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 :root {
-    --main-font-size: 14px;
+    --main-font-size: 13px;
     --dropbox-btn-bg: #0061FF;
     --dropbox-btn-bg-hov: #004cc5;
     --dropbox-hero-bg: #B4D0E7;
@@ -41,7 +41,7 @@ img {
 }
 
 .container-medium {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -52,24 +52,55 @@ img {
 
 .row {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
+
+.vertical-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 .btn-default {
     background-color: var(--dropbox-btn-bg);
     color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 12px;
 } 
 
 .btn-default:hover {
     background-color: var(--dropbox-btn-bg-hov);
 } 
 
+h1 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+/* COL SIZES */
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+}
+ 
+.col-8 {
+    flex-basis: calc((100% / 12) * 8);
+}
+ 
+.col-12 {
+    flex-basis: calc((100% / 12) * 12);
+}
+ 
 /* HEADER */
 
 .header-nav {
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .nav-left,
@@ -94,13 +125,51 @@ img {
 
 /* HERO */
 
+.hero-overlap {
+    transform: translateY(10%);
+}
+
+.page-hero {
+    background-color: var(--dropbox-hero-bg);
+}
+
+.hero-title {
+    margin-bottom: 35px;
+}
+
+.hero-content .vertical-row {
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.hero-content p {
+    font-weight: 400;
+}
+
+.hero-arrow {
+    font-size: 40px;
+    line-height: 135%;
+    transform: scaleY(90%);
+}
+
+
 
 /* DEBUG */
 
-.debug [class^="container"] {
+/* .debug [class^="container"] {
     border: 2px solid;
 }
 
 .debug .col {
     border: 1px solid grey;
+} */
+
+
+.debug .container-medium 
+{
+    border: 2px dashed purple;
+}
+
+.debug .page-hero [class^="col-"] {
+    border: 2px dotted darkblue;
 }
