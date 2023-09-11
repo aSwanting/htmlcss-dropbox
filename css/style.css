@@ -4,6 +4,7 @@
     --main-font-size: 14px;
     --dropbox-btn-bg: #0061FF;
     --dropbox-btn-bg-hov: #004cc5;
+    --dropbox-hero-bg: #B4D0E7;
 }
 
 
@@ -90,6 +91,8 @@ img {
 .nav-right .col:hover {
     background-color: rgb(245, 245, 245)
 }
+
+/* HERO */
 
 
 /* DEBUG */
