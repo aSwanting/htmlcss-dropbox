@@ -104,8 +104,8 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
-    margin-bottom: 50px;
+    font-size: 42px;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -341,6 +341,7 @@ h3 {
 
 .large-img-text {
     font-size: 16px;
+    margin-block: 100px;
 }
 
 .large-img-text .col-4 * {
@@ -353,8 +354,13 @@ h3 {
 }
 
 
+/* DROPBOX OPERATIONS SECTION */
 
 
+.dropbox-operations .col-12,
+.dropbox-operations .col-4 {
+    padding: 25px;
+}
 
 
 
@@ -362,7 +368,13 @@ h3 {
 
 /* DEBUG */
 
-.debug [class^=col] {
+.debug [class^="col"] {
     border: 1px dotted fuchsia;
 }
 
+
+.debug .dropbox-operations .col-4 {
+
+    min-height: 200px;
+
+}
