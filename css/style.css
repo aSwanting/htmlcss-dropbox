@@ -111,6 +111,7 @@ h2 {
 
 h3 {
     font-size: 26px;
+    line-height: 30px;
     margin-bottom: 20px;
 }
 
@@ -341,17 +342,17 @@ h3 {
 }
 
 .large-img-text {
-    font-size: 16px;
+    font-size: 15px;
     margin-block: 100px;
 }
 
 .large-img-text .col-4 * {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .large-card-text {
     position: relative;
-    top: 10%;
+    top: 6%;
 }
 
 
