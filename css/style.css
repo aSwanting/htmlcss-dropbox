@@ -328,7 +328,7 @@ h4 {
 
 /* WIDE CARD */
 
-.wide-card .col-12 {
+.col-12.wide-card {
     padding: 0 var(--column-padding);
     margin-bottom: 25px;
 }
