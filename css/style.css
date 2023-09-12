@@ -192,8 +192,8 @@ h3 {
 }
 
 .hero-arrow {
-    font-size: 40px;
-    line-height: 135%;
+    font-size: 48px;
+    line-height: 3;
     transform: scaleY(90%);
 }
 
