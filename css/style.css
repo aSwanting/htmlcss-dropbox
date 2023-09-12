@@ -74,7 +74,7 @@ img {
     display: inline-block;
     background-color: var(--dropbox-btn-bg);
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     padding: 12px 12px;
 } 
@@ -83,11 +83,36 @@ img {
     background-color: var(--dropbox-btn-bg-hov);
 } 
 
+.btn-alt {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 12px;
+} 
+
+.btn-alt:hover {
+    background-color: rgb(245, 245, 245);
+} 
+
 h1 {
     font-size: 52px;
     font-weight: 900;
     line-height: 120%;
 }
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
 
 /* COL SIZES */
 
@@ -168,11 +193,6 @@ h1 {
     padding: 25px;
 }
 
-.price-plan h2 {
-    font-size: 32px;
-    margin-bottom: 50px;
-}
-
 .price-plan-selection {
     margin-bottom: 40px;
 }
@@ -204,11 +224,6 @@ h1 {
     text-align: center;
     border-bottom: 1px solid var(--grey-line-col);
     padding: 15px;
-}
-
-.price-plan .price-plan-card h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
 }
 
 .price-plan .card-price {
@@ -317,12 +332,25 @@ h1 {
 }
 
 
+/* LARGE IMAGE AND TEXT SECTION */
 
+.large-img-text .col-8,
+.large-img-text .col-4 {
+    padding: 25px;
+}
 
+.large-img-text {
+    font-size: 16px;
+}
 
+.large-img-text .col-4 * {
+    margin-bottom: 30px;
+}
 
-
-
+.large-card-text {
+    position: relative;
+    top: 10%;
+}
 
 
 
