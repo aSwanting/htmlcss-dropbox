@@ -178,16 +178,16 @@ h4 {
 .page-hero {
     background-color: var(--dropbox-hero-bg);
     margin-bottom: 80px;
-    padding-block: 40px 20px;
+    padding-block: 40px 10px;
 }
 
-.hero-title {
+.hero-title {    
     margin-bottom: 35px;
 }
 
 .hero-content .vertical-row {
     align-items: flex-start;
-    gap: 40px;
+    gap: 30px;
 }
 
 .hero-content p {
@@ -202,8 +202,9 @@ h4 {
 }
 
 .hero-image {
+    width: 90%;
     transform-origin: 0 0;
-    transform: scale(120%) translateX(-5px);
+    transform: scale(120%);
 }
 
 /* PRICE PLAN SECTION */
