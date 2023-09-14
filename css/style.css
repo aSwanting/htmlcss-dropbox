@@ -426,7 +426,6 @@ h4 {
 }
 
 .logo-green {
-    border: 10px solid #D1E9CD;
     background-color: #A2D39B;
 }
 
@@ -454,6 +453,7 @@ h4 {
     background-color: #FFD830;
 }
 
+
 .client-grid .main-square {
     padding: 2%;
     background-color: #F5F5F5;
@@ -461,7 +461,7 @@ h4 {
 
 .client-grid .main-square p,
 .client-grid .main-square img {
-    margin-bottom: 12%;
+    margin-bottom: 8%;
     font-size: 1vw;
     font-weight: 200;
 }
@@ -471,11 +471,28 @@ h4 {
     max-width: 50%;
 }
 
-.client-grid .col-6 img {
+.client-grid .main-square figure::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 50px;
+    background-color:var(--grey-line-col);
+    margin-bottom: 8%;
+}
+
+.card-logo {
     display: block;
     filter: invert(1);
     max-width: 50%;
     margin: 0 auto;
+}
+
+[class*="logo-"]:hover {
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+[class*="logo-"]:hover .card-logo {
+    max-width: calc(50% + 10px);
 }
 
 .cta {
